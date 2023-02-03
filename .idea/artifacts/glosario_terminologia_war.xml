@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="glosario-terminologia:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="gterminos-SNAPSHOT-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="glosario-terminologia:war exploded" />
+    </root>
+  </artifact>
+</component>

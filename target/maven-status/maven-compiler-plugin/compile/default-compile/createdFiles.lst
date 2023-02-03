@@ -1,2 +1,8 @@
+com/glosario/gterminosSNAPSHOT/repository/WordRepository.class
+com/glosario/gterminosSNAPSHOT/model/Project.class
 com/glosario/gterminosSNAPSHOT/GterminosSnapshotApplication.class
+com/glosario/gterminosSNAPSHOT/controller/ProjectController.class
+com/glosario/gterminosSNAPSHOT/controller/WordController.class
+com/glosario/gterminosSNAPSHOT/repository/ProjectRepository.class
 com/glosario/gterminosSNAPSHOT/ServletInitializer.class
+com/glosario/gterminosSNAPSHOT/model/Word.class

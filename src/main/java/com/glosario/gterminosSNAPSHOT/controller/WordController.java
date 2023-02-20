@@ -1,7 +1,9 @@
 package com.glosario.gterminosSNAPSHOT.controller;
 
+import com.glosario.gterminosSNAPSHOT.configuration.PageSettings;
 import com.glosario.gterminosSNAPSHOT.model.Word;
 import com.glosario.gterminosSNAPSHOT.repository.WordRepository;
+import com.glosario.gterminosSNAPSHOT.service.WordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -35,6 +37,27 @@ public class WordController {
     @PostMapping // Especifica tipo de peticion HTTP aceptada
     public Word saveWord(@Validated @RequestBody Word word){
         return wordRepository.save(word);
+    }
+
+    // separator
+
+    private WordService wordService;
+
+    private PageToPageDTOMapper<Word> pageToPageDTOMapper;
+
+    @Autowired
+    public WordController(WordService wordService, PageToPageDTOMapper<Word> pageToPageDTOMapper) {
+        this.wordService = wordService;
+        this.pageToPageDTOMapper = pageToPageDTOMapper;
+    }
+
+    @GetMapping("/word")
+    public PageDTO<Word> getWordPage(PageSettings pageSettings) {
+
+        //log.info(
+        //        "Request for plant page received with data : " + pageSettings);
+
+        return pageToPageDTOMapper.pageToPageDTO(wordService.getWordPage(pageSettings));
     }
 
 }

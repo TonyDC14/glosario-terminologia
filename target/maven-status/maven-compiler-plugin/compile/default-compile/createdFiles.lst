@@ -1,5 +1,8 @@
 com/glosario/gterminosSNAPSHOT/repository/WordRepository.class
+com/glosario/gterminosSNAPSHOT/service/ProjectService.class
+com/glosario/gterminosSNAPSHOT/service/WordService.class
 com/glosario/gterminosSNAPSHOT/model/Project.class
+com/glosario/gterminosSNAPSHOT/configuration/PageSettings.class
 com/glosario/gterminosSNAPSHOT/GterminosSnapshotApplication.class
 com/glosario/gterminosSNAPSHOT/controller/ProjectController.class
 com/glosario/gterminosSNAPSHOT/controller/WordController.class

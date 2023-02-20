@@ -3,6 +3,7 @@ package com.glosario.gterminosSNAPSHOT.model;
 import javax.persistence.*;
 import java.io.Serializable;
 
+
 @Entity
 @Table(name = "words")
 public class Word implements Serializable {
